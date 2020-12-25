@@ -1,0 +1,114 @@
+.article{
+    background-color: rgb(222, 234, 235);
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .art1{
+   border: 1px solid rgb(211, 209, 209);
+   display: flex;
+   width: 1050px;
+   height: 350px;
+   margin-bottom: 20px;
+   box-sizing: border-box;
+ }
+ .art2{
+     border: 1px solid rgb(211, 209, 209);
+   display: flex;
+   width: 1050px;
+   height: 350px;
+   margin-bottom: 20px;
+   box-sizing: border-box;
+ }
+ .art-pic1{
+    width: 1500px;
+ }
+ .art-pic2{
+    width:1600px;  
+ }
+ 
+ .pic-1{
+     background-image: url(img/art-pic1.jpg);
+     height: 100%;
+     background-size: 100% 100%;
+ }
+ .pic-2{
+     background-image: url(img/art-pic2.jpg);
+     height: 100%;
+     background-size: 100% 100%;
+ }
+ /*圖片透明轉換*/
+ .art-pic1>.pic-1{
+    opacity: 0.5;
+}
+.art-pic2>.pic-2{
+    opacity: 0.5;
+}
+.art-pic1>.pic-1:hover{
+    opacity: 1;
+}
+.art-pic2>.pic-2:hover{
+    opacity: 1;
+}
+
+ .title-1{
+     font-size: 2em;
+     font-family: 'Space Grotesk', sans-serif;
+     margin-bottom: 20px;
+ }
+ .tax-3{
+     font-family: 'Teko', sans-serif;
+     padding: 20px;
+ }
+ .story-1{
+     border-bottom: 1px solid red;
+     padding-bottom: 50px;
+     line-height: 25px;
+     font-family: 'Dancing Script', cursive;
+ }
+ .views{
+    display: flex;
+ }
+ li{
+     margin: 0px 0px 20px 20px;
+     list-style:none;
+ }
+ /*螢幕像素小於800以下，套用以下設定*/
+ @media(max-width:800px){
+    .article{
+        padding: 10px 50px;
+    } 
+    .article>.art1{
+         flex-wrap: wrap;
+         width: 500px;
+     }
+     .article>.art2{
+         flex-wrap: wrap;
+         width: 500px;
+     }
+     .art-pic1{
+         height: 175px;
+     }
+     .art-pic2{
+         height: 175px;
+     }
+     .pic-1{
+        background-position: 20% center;
+     }
+     .pic-2{
+        background-position: 20% center;
+     }
+     .tax-3{
+         padding: 0px;
+     }
+     .title-1{
+         margin-bottom: 5px;
+         font-size: 1em;
+     }
+     .story-1{
+         padding-bottom: 10px;
+         line-height: 18px;
+     }
+     
+ }

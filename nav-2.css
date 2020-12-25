@@ -1,0 +1,117 @@
+body{
+    margin: 0px auto;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+}
+nav{
+    height: 900px;
+    background-attachment:fixed;
+    background-size: 100% 100%;
+    background-image: url(img/bg.jpg)
+   
+}
+.title{
+    text-align: center;
+    font-size: 2em;
+    padding: 40px 0px;
+    margin-bottom: 80px;;
+
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.item{
+    margin: 0px 40px;
+    text-shadow: 0.1em 0.1em rgb(117, 116, 116)
+    
+}
+
+a{
+    font-size: 1em;
+    text-decoration: none;
+    color: #000;
+    
+}
+.menu>.item>a:hover{
+     
+    color:rgb(154, 231, 154);
+}
+
+/*mobile-menu*/
+nav>.mobile-menu-2{
+    position: flex;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    margin: 0px;
+    text-align: center;
+    opacity:0.9;
+    display: none;
+}
+nav>.mobile-menu-2>.item{
+    font-size: 0.8em;
+    color: #222222;
+    padding-top: 30px;
+    cursor: pointer;
+}
+nav>.mobile-menu-2>.close{
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*trigger*/
+.mobile-menu-trigger{
+    color: #fff;
+    display: none;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.lines>.line{
+    width: 40px;
+}
+.mobile-menu-trigger>.lines>.line{
+    height: 2px;
+    background-color: #000;
+    margin: 8px 0px;
+}
+
+.memo{
+    text-align: center;
+    margin-top: 130px;
+    line-height: 2em;
+    letter-spacing: 0.5em;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 0em 0.1em #ffff;
+    
+}
+/*螢幕尺寸像素800以下，套用以下設定*/
+@media(max-width: 800px){
+    nav{
+        height: 600px;
+        background-position: 20% center;
+    }
+    nav>.title{
+        padding: 25px 0px;
+        margin-bottom: 40px;
+    }
+    nav>.menu{
+        display: none;
+    }
+    .mobile-menu-trigger{
+        display: flex;
+    }
+
+    nav>.memo{
+        font-size: 1.5em;
+        line-height: 1.25em;
+        
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-2.css">
+    <link rel="stylesheet" href="gallery-2.css">
+    <link rel="stylesheet" href="article-2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Hailian Farm</title>
+</head>
+<body>
+    <nav>
+        <div class="title">Hailian Farm</div>
+        <div class="menu">
+            <div class="item"><a href="#">Home</a></div>
+            <div class="item"><a href="#">About</a></div>
+            <div class="item"><a href="#">Blog</a></div>
+            <div class="item"><a href="#">Contact</a></div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu-2" >
+			<div class="item">Home</div>
+			<div class="item">About</div>
+			<div class="item">Blog</div>
+            <div class="item">Contact</div>
+            <div onclick="closeMenu()" class="close">X</div>
+		</div>
+        <div onclick="showMenu()" class="mobile-menu-trigger">
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="memo">Organic Agriculture. <br> Natural. <br> Keep You Healthy.</div>
+    </nav>
+    <section class="gallery">
+        <div class="col">
+            <div class="gallery picture pic-1">
+                <div class="words">
+                    <div class="title1">Read</div>
+                    <div class="story">TEH BLOG</div>
+                    <div class="action">
+                        <span class="btn"><a href="#">Read More</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-text">
+                <div class="words">
+                    <div class="title1">Hello</div>
+                    <div class="story">I'M Hailian Farm</div>
+                    <div class="action">
+                        <span class="btn"><a href="#">Read More</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="gallery-text">
+                <div class="words">
+                    <div class="title1">Adevertise With</div>
+                    <div class="story">Fashion style</div>
+                    <div class="action">
+                        <span class="btn"><a href="#">Read More</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery picture pic-2">
+                <div class="words">
+                    <div class="title1">Contribute</div>
+                    <div class="story">TO THE BLOG</div>
+                    <div class="action">
+                        <span class="btn"><a href="#">Read More</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="article">
+        <div class="art1">
+            <div class="art-pic1">
+                <div class="pic-1"></div>
+            </div>
+            <div class="tax-3">
+               <div class="title-1">What I Wore:Travelbr<br>Edition</div>
+               <div class="story-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque labore aliquid provident, illo, alias qui nemo, id et beatae nisi enim aliquam molestias voluptate error dolores iste distinctio voluptatum saepe.</div>
+               <ul class="views">
+                <li><a href="#">85 views</a></li>
+                <li><a href="#">write a comment</a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="art2">
+           <div class="art-pic2">
+               <div class="pic-2"></div>
+           </div>
+            <div class="tax-3">
+                <div class="title-1">Picking the Perfect Booties<br>for You</div>
+                <div class="story-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat repellat animi maxime adipisci suscipit explicabo ex? Voluptatum, praesentium quae numquam asperiores mollitia quis natus, in, quas fugiat dolor facere quasi.</div>
+                <ul class="views">
+                    <li><a href="#">85 views</a></li>
+                    <li><a href="#">write a comment</a></li>
+                </ul>  
+            </div> 
+        </div>
+    </section>
+    <footer>
+        &copy; 2020 by Hailian Farm and Xuemi.
+    </footer>
+   <script src="index.js"></script>
+</body>
+</html>
